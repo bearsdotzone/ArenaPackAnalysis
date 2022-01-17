@@ -43,15 +43,15 @@ for x in f:
             cards[name]+=1
         else:
             cards[name]=1
+if(len(cards.item()) != 0):
+    for x in range(int(max(sets.values())), 0, -1):
+        z = []
+        for k,v in sets.items():
+            if v is x:
+                z += [k]
 
-for x in range(int(max(sets.values())), 0, -1):
-    z = []
-    for k,v in sets.items():
-        if v is x:
-            z += [k]
-
-    if len(z) != 0:
-        print(x, z)
+        if len(z) != 0:
+            print(x, z)
 
 if(args.c):
     print("Cards")
