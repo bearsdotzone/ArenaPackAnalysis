@@ -47,7 +47,7 @@ for x in f:
 if(len(cards.items()) == 0):
     raise Error("No cards detected.")
 if(len(sets.values()) == 0):
-    raise Error("No sets detected.")
+    print("No sets detected. Will assume cards output intended.")
 else:
     for x in range(int(max(sets.values())), 0, -1):
         z = []
@@ -58,7 +58,7 @@ else:
         if len(z) != 0:
             print(x, z)
 
-if(args.c):
+if(args.c or (len(sets.values()) == 0)):
     print("Cards")
     for x in range(int(max(cards.values())), 0, -1):
         print(x)
