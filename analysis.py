@@ -46,8 +46,9 @@ for x in f:
 
 if(len(cards.items()) == 0):
     raise Error("No cards detected.")
-
-if(len(sets.values()) != 0):
+if(len(sets.values()) == 0):
+    raise Error("No sets detected.")
+else:
     for x in range(int(max(sets.values())), 0, -1):
         z = []
         for k,v in sets.items():
