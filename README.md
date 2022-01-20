@@ -8,6 +8,7 @@ Expects cards in a plaintext file in the following format.
 10 Forest (KHM)
 1 Command Tower
 ```
+```
 usage: analysis.py [-h] [-i INPUTFILE] [-c]
 
 optional arguments:
